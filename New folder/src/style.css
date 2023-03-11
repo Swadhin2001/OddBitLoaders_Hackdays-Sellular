@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.login{
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 100px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+    width: 50vw;
+}
+.input{
+    text-align: center;
+    margin: auto;
+    /* text-decoration: underline;   */
+}
+input[type = "password"],
+input[type = "text"],
+select{
+    padding : 10px 100px 10px 1px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+}
+.no_outline:focus{
+    outline: none;
+}
+hr{
+    padding-left: 100px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+}
