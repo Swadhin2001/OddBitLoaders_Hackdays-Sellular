@@ -79,3 +79,8 @@ hr{
     text-decoration: none;
     color: black;
 }
+.tag{
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(146, 58, 0) ;
+}
