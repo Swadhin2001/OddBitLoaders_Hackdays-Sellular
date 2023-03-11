@@ -3,15 +3,25 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url("/src/Frontend/Images/T.png");
+    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: -10px;
+    z-index: -1;
+}
 .login{
+    background-image: linear-gradient(0deg, rgb(206, 200, 136),rgb(249, 252, 89));
     display: block;
-    /* justify-content: center; */
-    /* align-items: center; */
     padding: 100px;
     border: 1px solid black;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 50vw;
+    border-radius: 10px;
+    opacity: 0.8;
+    height: 30vw ;
 }
 .input{
     text-align: center;
@@ -19,29 +29,53 @@
     /* text-decoration: underline;   */
 }
 input[type = "password"],
-input[type = "text"],
-select{
+input[type = "text"]{
+    background: transparent;
     padding : 10px 100px 10px 1px;
     font-size: 20px;
     border-radius: 8px;
     border: 0;
     outline: none;
 }
+input[type = "password"]{
+    margin-top: 10px;
+}
 .no_outline:focus{
     outline: none;
 }
 hr{
     padding-left: 100px;
+    margin-bottom: 30px;
 }
 .btn:hover{
     cursor: pointer;
+    background-color: rgb(226, 190, 69);
 }
 .btn{
+    background: rgb(253, 132, 76);
     display: block;
     padding: 20px;
-    width: 30%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     border-radius: 12px;
     font-size: 20px;
+    border: 0;
+    font-weight: bold;
+}   
+.click{
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.signup{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
