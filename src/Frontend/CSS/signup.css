@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +13,9 @@ body{
     background-position-y: -10px;
     z-index: -1;
 }
+input{
+    margin-bottom: 10px;
+}
 .login{
     background-image: linear-gradient(0deg, rgb(206, 200, 136),rgb(249, 252, 89));
     display: block;
@@ -24,24 +25,12 @@ body{
     width: 50vw;
     border-radius: 10px;
     opacity: 0.85;
-    height: 30vw ;
+    height: 35vw ;
     box-shadow: 5px 5px 50px rgb(116, 46, 0);
 }
 .input{
     text-align: center;
     margin: auto;
-}
-input[type = "password"],
-input[type = "text"]{
-    background: transparent;
-    padding : 10px 200px 10px 1px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 0;
-    outline: none;
-}
-input[type = "password"]{
-    margin-top: 10px;
 }
 .no_outline:focus{
     outline: none;
@@ -78,7 +67,7 @@ hr{
 .signup{
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0px;
     font-size: 20px;
     text-decoration: none;
@@ -88,4 +77,22 @@ hr{
     text-decoration: none;
     font-weight:bold;
     color:rgb(146, 58, 0) ;
+}
+p{
+    font-size: 25px;
+}
+legend{
+    font-size: 25px;
+}
+input[type = "password"],
+input[type = "text"]{
+    background: transparent;
+    padding : 10px 300px 10px 1px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    margin:0px;
+}
+input[type="text"].text3{
+    margin-top:0px;
 }
