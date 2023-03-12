@@ -9,6 +9,7 @@
 
 body{
     background-image: url(/src/Frontend/Images/T.png);
+    background-size: cover;
 }
 nav{
     background-color:black;
@@ -16,7 +17,7 @@ nav{
     height: 50%;
     opacity: 0.8;
 }
-h3{
+.heading{
     font-size: 350%;
     color: white;
     margin-bottom: 5px;
@@ -36,24 +37,21 @@ nav div img{
 }
 section{
     border-radius: 10px;
-    opacity: 0.7;
-    /* box-shadow: 5px 5px 10px rgb(116, 46, 0);; */
+    opacity: 0.9;
 }
 .contacts{
     position: absolute;
     height: 82%;
     width: 28%;
-    /* background-color: rgb(255, 255, 255); */
     margin:2%;
-    /* overflow:scroll; */
 }
 .chat{
     position: absolute;
-    height: 82%;
+    height: 80%;
     width: 66%;
     background-color: rgb(255, 255, 255);
     left: 30%;
-    margin: 2%;
+    margin:2%;
 }
 .contact-header{
     display: flex;
@@ -80,26 +78,19 @@ input[type=text] {
     display: flex;
     border-radius: 40px;
     padding: 2%;
-    /* height: 3%; */
-    /* padding-bottom: 3px; */
     border: 1px solid black;
-    /* margin-top: 1%; */
-    /* margin-bottom: 1%; */
 }
 .no_outline:focus{
     outline: none;
 }
 .search-btn{
     border-radius: 100%;
-    /* box-shadow: 1px 1px 5px black; */
 }
 .search-user{
     border-radius: 40px;
     margin-bottom: 1%;
 }
 .contact-names{
-    /* border-radius: ; */
-    /* display: flex; */
     height: 76.5%;
     box-shadow: 1px 1px 5px black;
     margin:2%;
@@ -108,8 +99,74 @@ input[type=text] {
     padding: 2%;
     padding-bottom: 3%;
     padding-left: 4%;
-    /* align-items: center; */
-    /* position: sticky; */
     background-color: white;
     opacity: 0.9;
+}
+.user-name{
+    color:black;
+    /* opacity: 1; */
+}
+/* .chatbody{
+    padding:25%;
+} */
+.chatfooter{
+    width: 95%;
+    height: 10%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    background-color: white;    
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+.sendmsg{
+    width:80%;
+    height: 45%;
+    margin-left: 1%;;
+    border: 1px solid black;
+    font-size: 20%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 5px black;
+}
+.sendbtn{
+    width:15%;
+    height:75%;
+    margin-left:1%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 0px 0px 5px black;
+}
+.sendbtn:hover{
+    cursor: pointer;
+    background-color: rgb(182, 173, 163);
+}
+.chatheader{
+    width:100%;
+    height: 20%;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px;
+    background-color: red;
+}
+.chatbody{
+    height:150%;
+}
+.display_pic{
+    margin: 1% 2%;
+    width:70px;
+    height:70px;
+    border-radius: 100%;
+    background-image: url(/src/Frontend/Images/female1.png);
+    background-size: cover;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+.chatheader{
+    display: flex;
+    align-items: center;
+}
+.display_pic-details{
+    margin-top: 10%;
 }
