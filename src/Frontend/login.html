@@ -11,19 +11,19 @@
 <body>
     <!-- <header></header> -->
     <main>
-        <div class ="login">
-            <p><input type ="text" class = "no_outline" id = "Email" placeholder="Enter Your Email" required></p>
+        <form class ="login" id="login-form">
+            <p><input type ="text" class = "no_outline" id = "Email" name = "email" placeholder="Enter Your Email" required></p>
             <hr>
-            <p><input type ="password" class = "no_outline" placeholder="Password" required></p>
+            <p><input type ="password" class = "no_outline" name = "pwd" placeholder="Password" required></p>
             <hr>
-            <input type="submit" class = "btn" value="Login">  
+            <a href="home.html">
+                <input class = "btn" value="Login">
+            </a>
             <p class="signup"> Have no account yet? 
-                <a href="./signup.html" class="tag" >Sign Up</a>
+                <a href="signup.html" class="tag" >Sign Up</a>
             </p>
-            
-        </div>
+        </form>
     </main>
     <!-- <footer></footer> -->
-    <script src="./main.js"></script>
 </body>
 </html>
