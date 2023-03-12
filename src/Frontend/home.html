@@ -12,8 +12,14 @@
     <header>
         <nav>
             <div class="nav_left">
-                <img src="/src/Frontend/Images/Logo.png">
-                <h3 class="heading">hatApp</h3>
+                <!-- <img src="/src/Frontend/Images/Logo.png"> -->
+                <div class="nav_left_div">
+                    <!-- <input type="button" value="Chat" class="heading-btn no_outline"> -->
+                    <h3 class="heading1">Chat</h3>
+                    <div class="heading-div">
+                        <h3 class="heading2">hub</h3>
+                    </div>
+                </div>
             </div>
             <div class="nav_right">
 
@@ -31,21 +37,23 @@
             </div>
             <div class="contact-names">
                 <div class="user">
-                    <div class="circle"></div>
-                    <div class="user-info">
-                        <h3 class="name">John Doe</h3>
-                        <p class="activity">Online</p>
+                    <div class="circle" id="usr1">
+                        
                     </div>
-                </div>
-                <div class="user">
-                    <div class="circle"></div>
                     <div class="user-info">
                         <h3 class="name">Charlie Quinn</h3>
                         <p class="activity">Online</p>
                     </div>
                 </div>
-                <div class="user">
-                    <div class="circle"></div>
+                <div class="user" >
+                    <div class="circle" id="usr2"></div>
+                    <div class="user-info">
+                        <h3 class="name">John Doe</h3>
+                        <p class="activity">Online</p>
+                    </div>
+                </div>
+                <div class="user" >
+                    <div class="circle" id="usr3"></div>
                     <div class="user-info">
                         <h3 class="name">Peter Griffin</h3>
                         <p class="activity">Online</p>
@@ -68,7 +76,12 @@
                 </div>
             </div>
             <div class="chatbody">
-
+                <div class="msg1">
+                    <h2 class="msg">Hey, Waddup?</h2>
+                </div>
+                <div class="msg2">
+                    <h2 class="msg">Saul Goodman &#128521</h2>
+                </div>
             </div>
             <div class="chatfooter">
                 <input type="text" class="sendmsg no_outline" placeholder ="Enter Messege">

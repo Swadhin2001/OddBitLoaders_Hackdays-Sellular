@@ -7,18 +7,47 @@
 }
 
 body{
-    background-image: url(/src/Frontend/Images/T.png);
+    background-image: url(/src/Frontend/Images/DAY.png);
     background-size: cover;
 }
 nav{
     background-color:black;
     height: 50%;
-    opacity: 0.8;
 }
-.heading{
+.nav_left_div{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    opacity: 1;
+}
+.heading1,.heading2{
     font-size: 350%;
     color: white;
-    margin-bottom: 5px;
+}
+.heading1{
+    background-color: black;
+    color:white;
+    width:95%;
+    height:100%;
+    font-size: 60px;
+    border:0;
+}
+.heading-div{
+    width: 70%;
+    height:30%;
+    background-color: rgb(236, 154, 0);
+    color:white;
+    text-align: center;
+    border-radius: 6px;
+    padding-left: 3%;
+    padding-right: 7%;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.heading-btn:hover{
+    cursor: pointer;
+    background-color: rgb(59, 59, 59);
 }
 .nav_left{
     height: 15%;
@@ -27,6 +56,12 @@ nav{
     width:20%;
     align-items: end;
     justify-content: center;
+}
+.nav_right{
+    height:15%;
+    width:100%;
+    background-color:black;
+    opacity: 0.8;
 }
 nav div img{
     width:70px;
@@ -62,6 +97,7 @@ section{
     position: sticky;
     background-color: white;    
     padding-top: 3%;
+    opacity: 0.8;
 }
 input[type=text] {
     float: right;
@@ -116,7 +152,7 @@ input[type=text] {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background-color: aquamarine;
+    background-color: rgb(170, 209, 196);
 }
 .contact-names::-webkit-scrollbar {
     display: none; 
@@ -125,7 +161,8 @@ input[type=text] {
     height: 55px;
     width: 55px;
     border-radius: 100%;
-    background-color: blue;
+    /* background-color: blue; */
+    
     margin: 5% 2%;
     margin-right: 4%;
     opacity: 10;
@@ -141,7 +178,23 @@ input[type=text] {
     overflow: hidden;
     color: rgb(104, 104, 104);
 }
-.user {
+#usr1{
+    background-image: url(/src/Frontend/Images/female1.png);
+    background-size:120%;
+    background-position-x:center;
+}
+#usr2{
+    background-image: url(/src/Frontend/Images/male1.png);
+    background-size:120%;
+    background-position-x:center;
+}
+#usr3{
+    background-image: url(/src/Frontend/Images/pg.png);
+    background-size:200%;
+    background-position-x:center;
+    background-position-y:-6%;
+}
+.user{
     display: flex;
     border-radius: 150px;
     height: 15%;
@@ -283,6 +336,7 @@ input[type=text] {
 .chat{
     display: flex;
     flex-direction: column;
+    opacity: 0.8;
 }
 .chatheader{
     display: flex;
@@ -290,4 +344,26 @@ input[type=text] {
 }
 .display_pic-details{
     margin-top: 10%;
+}
+.msg1{
+    width:20%;
+    height: 10%;
+    background-color: rgb(71, 0, 0);
+    color:white;
+    margin-top: 30%;
+    margin-left: 5%;
+    border-radius: 100px;
+}
+.msg2{
+    width:30%;
+    height: 10%;
+    background-color: rgb(71, 0, 0);
+    color:white;
+    /* margin-top: 35%;*/
+    margin-left: 65%; 
+    border-radius: 100px;
+}
+.msg{
+    margin-left: 6%;
+    padding: 2%;
 }
