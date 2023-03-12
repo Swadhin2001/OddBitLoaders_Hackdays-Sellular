@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -12,7 +11,6 @@ body{
 }
 nav{
     background-color:black;
-    /* display: inline; */
     height: 50%;
     opacity: 0.8;
 }
@@ -36,16 +34,12 @@ nav div img{
 }
 section{
     border-radius: 10px;
-    opacity: 0.7;
-    /* box-shadow: 5px 5px 10px rgb(116, 46, 0);; */
 }
 .contacts{
     position: absolute;
     height: 82%;
     width: 28%;
-    /* background-color: rgb(255, 255, 255); */
     margin:2%;
-    /* overflow:scroll; */
 }
 .chat{
     position: absolute;
@@ -76,40 +70,147 @@ input[type=text] {
     margin-right: 16px;
     font-size: 17px;
 }
+.addContacts {
+    height: 25%;
+    width: 20%;
+    margin-left: 0.7%;
+    font-size: 300%;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
 .search{
     display: flex;
     border-radius: 40px;
+    width: 120%;
     padding: 2%;
-    /* height: 3%; */
-    /* padding-bottom: 3px; */
-    border: 1px solid black;
-    /* margin-top: 1%; */
-    /* margin-bottom: 1%; */
+    box-shadow: 0px 0px 5px black;
 }
 .no_outline:focus{
     outline: none;
 }
-.search-btn{
-    border-radius: 100%;
-    /* box-shadow: 1px 1px 5px black; */
-}
 .search-user{
     border-radius: 40px;
     margin-bottom: 1%;
+    width: 77%;
+    border: 1px solid black;
+}
+.search-btn{
+    border-radius: 100%;
+    cursor: pointer;
+    border: 0;
+    background-image: url(/src/Frontend/Images/search-icon.png);
+    background-size: cover;
 }
 .contact-names{
-    /* border-radius: ; */
-    /* display: flex; */
     height: 76.5%;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 0px 0px 5px black;
     margin:2%;
     margin-top: 4%;
     border-radius: 8px;
-    padding: 2%;
-    padding-bottom: 3%;
-    padding-left: 4%;
-    /* align-items: center; */
-    /* position: sticky; */
+    padding: 2% 4% 3% 4%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: aquamarine;
+}
+.contact-names::-webkit-scrollbar {
+    display: none; 
+}
+.circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    background-color: blue;
+    margin: 5% 2%;
+    margin-right: 4%;
+    opacity: 10;
+}
+.circle:nth-child(1) {
+    margin-top: 5%;
+}
+.name {
+    width: 70%;
+    height: 70%;
+    font-size: 150%;
+    padding-top: 8%;
+    overflow: hidden;
+    color: rgb(104, 104, 104);
+}
+.user {
+    display: flex;
+    border-radius: 150px;
+    height: 15%;
+    box-shadow: 0px 0px 8px grey;
     background-color: white;
-    opacity: 0.9;
+    margin: 4% 0;
+    align-items: center;
+}
+
+.user-info:hover .name {
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes up {
+    from {
+        padding-top: 8%;
+    }
+    to {
+        padding-top: 2%;
+    }
+}
+.user-info:not(:hover) .name {
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+@keyframes down {
+    from {
+        padding-top: 2%;
+    }
+    to {
+        padding-top: 8%;
+    }
+}
+
+.user-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.activity {
+    color: green;
+    font-weight: bold;
+    opacity: 0;
+}
+.user-info:hover .activity {
+    animation-name: unhide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes unhide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.user-info:not(:hover) .activity {
+    animation-name: unwatch;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+@keyframes unwatch {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
